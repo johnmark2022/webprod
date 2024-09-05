@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 right-0 p-4">
+        <ul class="flex space-x-4 text-lg">
+            <li>
+                <a href="#about" class="text-gray-700 hover:text-blue-500 hover:underline underline-offset-4 decoration-2 decoration-blue-500">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="text-gray-700 hover:text-blue-500 hover:underline underline-offset-4 decoration-2 decoration-blue-500">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#resume" class="text-gray-700 hover:text-blue-500 hover:underline underline-offset-4 decoration-2 decoration-blue-500">
+                    Resume/CV
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="text-gray-700 hover:text-blue-500 hover:underline underline-offset-4 decoration-2 decoration-blue-500">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-teal-700">
+        <img src="img/profile.jpg" alt="Your Picture" class="shadow-lg mb-8 lg:mb-0 rounded-lg border-stone-500" style="height: 550px; width: 450px;">
+        <div class="max-w-4xl p-8 text-center">
+            <div class="bg-teal-700 p-6 rounded-lg">
+                <h1 class="text-6xl font-bold text-teal-700 animate-bounce">John Mark Madera</h1>
+                <br>
+                <h1 class="text-4xl font-bold text-teal-700">About Me</h1>
+                <p class="mt-4 text-teal-700">Hi, I'm John Mark Madera, a passionate web developer with a love for creating beautiful, functional, and user-friendly websites. My journey into web development started with a curiosity for technology and a desire to solve real-world problems through design and code...</p>
+            </div>
+        </div>
+    </section>
+    
+   
+
+    <section id="projects" class="min-h-screen flex items-center justify-center bg-blue-200">
+        <div class="max-w-4xl p-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-800">Projects</h2>
+            <p class="mt-4 text-gray-600">Here are some of the projects I’ve worked on...</p>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/project1.jpeg" alt="Project One" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-4">create a website</h3>
+                    <p class="mt-4 text-gray-600">A brief description of Project One. Highlight the key technologies used, goals, and outcomes.</p>
+                    
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/project2.png" alt="Project Two" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-4">My Website</h3>
+                    <p class="mt-4 text-gray-600">A brief description of Project Two. Highlight key features and unique aspects of the project.</p>
+                    
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/project3.png" alt="Project Three" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-4">Multimedia</h3>
+                    <p class="mt-4 text-gray-600">A brief description of Project Three. Mention any notable challenges and how you overcame them.</p>
+                
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/project4.png" alt="Project Four" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-semibold text-gray-700 mt-4">Photoshop</h3>
+                    <p class="mt-4 text-gray-600">A brief description of Project Four. Include the tools and frameworks used.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="resume" class="min-h-screen flex items-center justify-center bg-white">
+        <div class="max-w-4xl p-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-800">Resume/CV</h2>
+            <p class="text-lg mb-4">
+                Download my full resume/CV to learn more about my professional experience and education.
+            </p>
+            <a href="./resume.pdf" download class="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">
+                Download Resume
+            </a>
+            <!-- Include download links or embedded resume/CV here -->
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-gray-200">
+        <div class="max-w-4xl w-full p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">Contact</h2>
+            <p class="text-lg text-gray-600 mb-6 text-center">Feel free to reach out to me through the form below or via my contact details.</p>
+    
+           <!-- Contact Form -->
+<form id="contactForm" class="space-y-6">
+    <div>
+        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+        <input type="text" id="name" name="name" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+    </div>
+
+    <div>
+        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+        <input type="email" id="email" name="email" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+    </div>
+
+    <div>
+        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" required class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-600" onclick="validateAndSendEmail(event)">
+        Send Message
+    </button>
+</form>
+
+<script>
+    function validateAndSendEmail(event) {
+        // Prevent the form from submitting immediately
+        event.preventDefault();
+
+        // Get form fields
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Basic validation
+        if (name === '') {
+            alert('Please enter your name.');
+            return false;
+        }
+
+        if (email === '') {
+            alert('Please enter your email.');
+            return false;
+        }
+
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        if (message === '') {
+            alert('Please enter your message.');
+            return false;
+        }
+
+        // Open the email client
+        window.location.href = mailtoLink;
+    }
+
+    // Function to validate email format
+    function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return re.test(String(email).toLowerCase());
+    }
+</script>
+
+            <!-- Contact Details -->
+            <div class="mt-8 text-center">
+                <p class="text-gray-700 font-bold">Or reach me via:</p>
+                <p class="text-gray-600">Email: <a href="mailto:your.email@example.com" class="text-teal-700 hover:underline">johnmarkmadera03@gmail.com</a></p>
+                <p class="text-gray-600">Phone: <a href="tel:+1234567890" class="text-teal-700 hover:underline">+950477</a></p>
+                <p class="text-gray-600">LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-teal-700 hover:underline">linkedin.com/in/yourprofile</a></p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
